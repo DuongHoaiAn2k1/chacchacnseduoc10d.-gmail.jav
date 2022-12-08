@@ -1,0 +1,45 @@
+.card {
+    position: relative;
+}
+
+.card img {
+    object-fit: cover;
+    object-position: center;
+    height: 230px;
+    width: 100%;
+}
+
+.card i {
+    color: #2e5fab;
+}
+
+.card .card-title {
+    color: #2e5fab;
+}
+
+.card table td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+div.save-item i {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+i.red {
+    color: red;
+}
+
+#filter:hover {
+    box-shadow: 1px 1px 5px 3px rgb(172, 198, 255);
+    transform: translateY(-0.1em);
+}

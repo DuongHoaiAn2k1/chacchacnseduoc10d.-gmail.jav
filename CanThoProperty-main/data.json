@@ -1,0 +1,464 @@
+[
+    {
+        "id": "d001",
+        "name": "NỀN KHU DÂN CƯ GẦN CHỢ TRÀ NÓC",
+        "loai": "Đất",
+        "hinhthuc": "bán",
+        "area": "Bình thủy",
+        "price": "1850000000",
+        "square": "85",
+        "img": [
+            "./img/d001/h1.jpg",
+            "./img/d001/h2.jpg"
+        ]
+    },
+    {
+        "id": "d002",
+        "name": "NỀN MẶT TIỀN ĐƯỜNG HOÀNG QUỐC VIỆT",
+        "loai": "Đất",
+        "hinhthuc": "bán",
+        "area": "Ninh Kiều",
+        "price": "9999000000",
+        "square": "160",
+        "img": [
+            "./img/d002/h1.jpg",
+            "./img/d002/h2.jpg",
+            "./img/d002/h3.jpg"
+        ]
+    },
+    {
+        "id": "d003",
+        "name": "BÁN NỀN MẶT TIỀN ĐƯỜNG NGUYỄN VĂN QUANG KDC NAM LONG",
+        "loai": "Đất",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "5600000000",
+        "square": "85",
+        "img": [
+            "./img/d003/h1.jpg",
+            "./img/d003/h2.jpg",
+            "./img/d003/h3.jpg"
+        ]
+    },
+    {
+        "id": "ch001",
+        "name": "BÁN CĂN CHUNG CƯ HỒNG LOAN LÔ 6A SỐ HỒNG HOÀN CHỈNH",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "850000000",
+        "square": "47",
+        "img": [
+            "./img/ch001/h1.jpg",
+            "./img/ch001/h2.jpg",
+            "./img/ch001/h3.jpg",
+            "./img/ch001/h4.jpg"
+        ]
+    },
+    {
+        "id": "ch002",
+        "name": "CĂN HÔ CHUNG CƯ NAM LONG - HỒNG PHÁT TẦNG 4",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "880000000",
+        "square": "38.1",
+        "img": [
+            "./img/ch002/h1.jpg"  
+        ]
+    },
+    {
+        "id": "ch003",
+        "name": "CĂN HỘ CHUNG CƯ LÊ HỒNG NHI PHƯỜNG BA LÁNG CÁI RĂNG CẦN THƠ",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "1480000000",
+        "square": "67",
+        "img": [
+            "./img/ch003/h1.jpg",
+            "./img/ch003/h2.jpg",
+            "./img/ch003/h3.jpg",
+            "./img/ch003/h4.jpg"
+        ]
+    },
+    {
+        "id": "ch004",
+        "name": "CĂN HỘ CHUNG CƯ LÊ HỒNG NHI",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "1100000000",
+        "square": "73",
+        "img": [
+            "./img/ch004/h1.jpg",
+            "./img/ch004/h2.jpg",
+            "./img/ch004/h3.jpg",
+            "./img/ch004/h4.jpg"
+        ]
+    },
+    {
+        "id": "ch005",
+        "name": "CĂN HỘ THE RIVER THỦ THIÊM",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Ninh Kiều",
+        "price": "15000000000",
+        "square": "84",
+        "img": [
+            "./img/ch005/h1.jpg",
+            "./img/ch005/h2.jpg",
+            "./img/ch005/h3.jpg"
+        ]
+    },
+    {
+        "id": "ch006",
+        "name": "DÃY B TẦNG 2 CHUNG CƯ HỒNG LOAN 6A",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "850000000",
+        "square": "47",
+        "img": [
+            "./img/ch006/h1.jpg",
+            "./img/ch006/h2.jpg",
+            "./img/ch006/h3.jpg"
+        ]
+    },
+    {
+        "id": "ch007",
+        "name": "CHUNG CƯ GIÁ RẺ LÃI SUẤT THẤP",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "600000000",
+        "square": "40",
+        "img": [
+            "./img/ch007/h1.jpg",
+            "./img/ch007/h2.jpg",
+            "./img/ch007/h3.jpg"
+        ]
+    },
+    {
+        "id": "ch008",
+        "name": "NHÀ ĐẸP - VỊ TRÍ ĐẸP - LỘ RỘNG - 6M NẰM KẾ - ĐẠI HỌC CT",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Ninh Kiều",
+        "price": "2990000000",
+        "square": "56.52",
+        "img": [
+            "./img/ch008/h1.jpg",
+            "./img/ch008/h2.jpg",
+            "./img/ch008/h3.jpg"
+        ]
+    },
+    {
+        "id": "ch009",
+        "name": "SHOPHOUSE KHU ĐÔ THỊ AN PHÚ 1 CẦN THƠ",
+        "loai": "Căn Hộ",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "2920000000",
+        "square": "113",
+        "img": [
+            "./img/ch009/h1.jpg",
+            "./img/ch009/h2.jpg",
+            "./img/ch009/h3.jpg",
+            "./img/ch009/h4.jpg"
+        ]
+    },
+    {
+        "id": "nt001",
+        "name": "NHÀ TRỌ THU TRANG",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "1200000",
+        "square": "12",
+        "img": [
+            "./img/nt001/h1.jpg",
+            "./img/nt001/h2.jpg",
+            "./img/nt001/h3.jpg"
+        ]
+    },
+    {
+        "id": "nt002",
+        "name": "NHÀ TRỌ NGỌC NGÂN",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "1600000",
+        "square": "16",
+        "img": [
+            "./img/nt002/h1.jpg",
+            "./img/nt002/h2.jpg",
+            "./img/nt002/h3.jpg"
+        ] 
+    },
+    {
+        "id": "nt003",
+        "name": "NHÀ TRỌ TOÀN THẮNG",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "1700000",
+        "square": "17",
+        "img": [
+            "./img/nt003/h1.jpg",
+            "./img/nt003/h2.jpg",
+            "./img/nt003/h3.jpg",
+            "./img/nt003/h4.jpg",
+            "./img/nt003/h5.jpg"   
+        ] 
+    },
+    {
+        "id": "nt004",
+        "name": "NHÀ TRỌ SINH VIÊN GẦN TRƯỜNG CĐCT VÀ ĐHCT",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "2500000",
+        "square": "20",
+        "img": [
+            "./img/nt004/h1.jpg",
+            "./img/nt004/h2.jpg",
+            "./img/nt004/h3.jpg" 
+        ] 
+    },
+    {
+        "id": "nt005",
+        "name": "TRỌ HẺM 25 ĐỒNG VĂN CỐNG",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "2500000",
+        "square": "16",
+        "img": [
+            "./img/nt005/h1.jpg",
+            "./img/nt005/h2.jpg",
+            "./img/nt005/h3.jpg" 
+        ] 
+    },
+    {
+        "id": "nt006",
+        "name": "PHÒNG TRỌ GẦN CẦU GẠCH SÚC ĐƯỜNG VÕ VĂN KIỆT",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "2800000",
+        "square": "21.5",
+        "img": [
+            "./img/nt006/h1.jpg",
+            "./img/nt006/h2.jpg"
+        ] 
+    },
+    {
+        "id": "nt007",
+        "name": "PHÒNG TRỌ GẦM ĐẠI HỌC Y DƯỢC",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "3100000",
+        "square": "23",
+        "img": [
+            "./img/nt007/h1.jpg",
+            "./img/nt007/h2.jpg",
+            "./img/nt007/h3.jpg"
+        ] 
+    },
+    {
+        "id": "nt008",
+        "name": "PHÒNG TRỌ GẦM ĐẠI HỌC KINH TẾ - KỸ THUẬT CẦN THƠ",
+        "loai": "Nhà Trọ",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "1900000",
+        "square": "18",
+        "img": [
+            "./img/nt008/h1.jpg",
+            "./img/nt008/h2.jpg",
+            "./img/nt008/h3.jpg"
+        ] 
+    },
+    {
+        "id": "vp001",
+        "name": "VĂN PHÒNG TÒA SHB",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "77000000",
+        "square": "390",
+        "img": [
+            "./img/vp001/h1.jpg",
+            "./img/vp001/h2.jpg"
+        ] 
+    },
+    {
+        "id": "vp002",
+        "name": "CHO THUÊ VĂN PHÒNG MỚI CỦA TÒA NHÀ SHB BUILDING",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "85000000",
+        "square": "390",
+        "img": [
+            "./img/vp002/h1.jpg",
+            "./img/vp002/h2.jpg"
+        ] 
+    },
+    {
+        "id": "vp003",
+        "name": "CHO THUÊ TÒA VĂN PHÒNG 1 HẦM 1 LỬNG",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "190000000",
+        "square": "1200",
+        "img": [
+            "./img/vp003/h1.jpg",
+            "./img/vp003/h2.jpg"
+        ] 
+    },
+    {
+        "id": "vp004",
+        "name": "CHO THUÊ VĂN PHÒNG TÒA NHÀ MẶT TIỀN QUANG TRUNG, TP CẦN THƠ",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Cái Răng",
+        "price": "540000000",
+        "square": "2300",
+        "img": [
+            "./img/vp004/h1.jpg",
+            "./img/vp004/h2.jpg"
+        ] 
+    },
+    {
+        "id": "vp005",
+        "name": "CHO THUÊ VĂN PHÒNG TÒA NHÀ NAM Á",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Cái Răng",
+        "price": "800000000",
+        "square": "2000",
+        "img": [
+            "./img/vp005/h1.jpg"     
+        ] 
+    },
+    {
+        "id": "vp006",
+        "name": "CHO THUÊ TÒA NHÀ VĂN PHÒNG",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "400000000",
+        "square": "1600",
+        "img": [
+            "./img/vp006/h1.jpg",
+            "./img/vp006/h2.jpg",
+            "./img/vp006/h3.jpg"
+        ] 
+    },
+    {
+        "id": "vp007",
+        "name": "CHO THUÊ VĂN PHÒNG MẶT TIỀN",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "250000000",
+        "square": "2000",
+        "img": [
+            "./img/vp007/h1.jpg",
+            "./img/vp007/h2.jpg",
+            "./img/vp007/h3.jpg"
+        ] 
+    },
+    {
+        "id": "vp008",
+        "name": "CHO THUÊ VĂN PHÒNG ĐẠI LỘ HÒA BÌNH",
+        "loai": "Văn Phòng",
+        "hinhthuc": "thuê",
+        "area": "Ninh Kiều",
+        "price": "200000000",
+        "square": "1600",
+        "img": [
+            "./img/vp008/h1.jpg",
+            "./img/vp008/h2.jpg"
+        ] 
+    },
+    {
+        "id": "n001",
+        "name": "NHÀ TRỆT LỬNG CÁCH MẶT TIỀN TRẦN QUANG DIỆU CHỈ 10m PHƯỜNG AN THỚI",
+        "loai": "Nhà",
+        "hinhthuc": "bán",
+        "area": "Bình Thủy",
+        "price": "1150000000",
+        "square": "35",
+        "img": [
+            "./img/n001/h1.jpg",
+            "./img/n001/h2.jpg",
+            "./img/n001/h3.jpg"
+        ] 
+    },
+    {
+        "id": "n002",
+        "name": "NHÀ TRỆT LẦU THIẾT KẾ HIỆN ĐẠI - CÁCH LỘ 20M",
+        "loai": "Nhà",
+        "hinhthuc": "bán",
+        "area": "Bình Thủy",
+        "price": "2550000000",
+        "square": "40",
+        "img": [
+            "./img/n002/h1.jpg",
+            "./img/n002/h2.jpg",
+            "./img/n002/h3.jpg",
+            "./img/n002/h4.jpg"
+        ] 
+    },
+    {
+        "id": "n003",
+        "name": "NHÀ TRỆT LẦU HẺM 6 TRẦN VĨNH KIẾT GIÁ CHỈ 2,55 TỶ",
+        "loai": "Nhà",
+        "hinhthuc": "bán",
+        "area": "Ninh Kiều",
+        "price": "2550000000",
+        "square": "40",
+        "img": [
+            "./img/n003/h1.jpg",
+            "./img/n003/h2.jpg",
+            "./img/n003/h3.jpg",
+            "./img/n003/h4.jpg",
+            "./img/n003/h5.jpg",
+            "./img/n003/h6.jpg"
+        ] 
+    },
+    {
+        "id": "n004",
+        "name": "Bán chung cư Lầu 4 kdc Hồng Loan 6A",
+        "loai": "Nhà",
+        "hinhthuc": "bán",
+        "area": "Cái Răng",
+        "price": "650000000",
+        "square": "36",
+        "img": [
+            "./img/n004/h1.jpg",
+            "./img/n004/h2.jpg",
+            "./img/n004/h3.jpg"
+        ] 
+    },
+    {
+        "id": "n005",
+        "name": "Nhà 2 Lầu - Vị Trí - Tuyệt Đẹp Kế Công Viên Hùng Vương",
+        "loai": "Nhà",
+        "hinhthuc": "bán",
+        "area": "Ninh Kiều",
+        "price": "2750000000",
+        "square": "40",
+        "img": [
+            "./img/n005/h1.jpg",
+            "./img/n005/h2.jpg",
+            "./img/n005/h3.jpg",
+            "./img/n005/h4.jpg"
+        ] 
+    }
+]

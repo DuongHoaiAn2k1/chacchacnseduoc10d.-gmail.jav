@@ -1,0 +1,28 @@
+.card i {
+    color: #2e5fab;
+}
+
+.card .card-title {
+    color: #2e5fab;
+}
+
+.card table td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#carouselExampleDark img {
+    object-fit: contain;
+    align-self: center;
+    width: 800px;
+    height: 600px;
+}
+
+#carouselExampleDark {
+    background-color: white;
+}
+
+#img-root {
+    justify-content: center;
+}
