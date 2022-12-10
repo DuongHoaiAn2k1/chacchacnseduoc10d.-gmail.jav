@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang chủ</title>
+  <title>Đăng tin</title>
   <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="./style/style.css">
@@ -60,8 +60,11 @@
             <button id="signin-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Đăng Nhập
             </button>
-            <button onclick="logOut();" id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Đăng ký
+            </button>
+            <button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">
+              Đăng bài
             </button>
           </div>
         </div>
@@ -71,7 +74,7 @@
         class="fas fa-chevron-up"></i></a>
   </header>
   <main>
-    <form name="addproduct" action="post">
+    <form class="form-add" name="addproduct">
         <div class="container col-md-6 bg-white rounded-2 p-1 mt-4 mb-4">
             <div>
                 <i class="fa fa-info-circle"></i> <span>Thông tin bất động sản</span>
@@ -81,7 +84,7 @@
                     <div class="form-group">
                         <label for="tieude">Tiêu đề *</label>
                         <div class="input-group">
-                            <input type="text" class="form-control maxlength" required="" maxlength="99" placeholder="Tiêu đề" id="tieude" name="tieude">
+                            <input type="tform-input ext" class="form-control maxlength" required="" maxlength="99" placeholder="Tiêu đề" id="tieude" name="tieude">
                         </div>
                     </div>
                 </div>
@@ -89,16 +92,16 @@
                     <div class="form-group">
                         <label for="diachi">Địa chỉ *</label>
                         <div class="input-group">
-                            <input type="text" class="form-control maxlength" required="" maxlength="300" placeholder="Địa chỉ" id="diachi" name="diachi">
+                            <input type="tform-input ext" class="form-input form-control maxlength" required="" maxlength="300" placeholder="Địa chỉ" id="diachi" name="diachi">
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="loaitin">Nhu cầu *</label>
-                        <select class="form-control" required="" name="loaitin" id="loaitin">
+                        <select class="form-input form-control" required="" name="loaitin" id="loaitin">
                             <option value="">-- Nhu cầu --</option>
-                            <option value="bán">Mua bán </option>
+                            <option value="bán">Mua bán</option>
                             <option value="thuê">Cho thuê</option>
                         </select>
                     </div>
@@ -106,21 +109,21 @@
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="loaibds">Loại bất động sản *</label>
-                        <select class="form-control" required="" id="loaibds" name="loaibds">
+                        <select class="form-input form-control" required="" id="loaibds" name="loaibds">
                             <option value="">-- Loại bds --</option>
                             <option value="ch">Căn hộ</option>
                             <option value="n">Nhà</option>
                             <option value="d">Đất</option>
                             <option value="vp">Văn phòng-Kho</option>
                             <option value="nt">Nhà Trọ </option>
-                            <option value=" ">Khác</option>
+                            <option value="khác">Khác</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="quan">Quận *</label>
-                        <select class="form-control inputMenu select2 select2-hidden-accessible" id="quan" name="kvquan" required="" tabindex="-1" aria-hidden="true">
+                        <select class="form-input form-control " id="quan" name="kvquan" required="" tabindex="-1" aria-hidden="true">
                             <option  value="">-- Quận/Huyện --</option>
                             <option  value="Ninh Kiều">Ninh Kiều</option>
                             <option  value="Bình Thủy">Bình Thủy</option>
@@ -135,140 +138,140 @@
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="dientich">Diện tích *</label>
-                        <input class="form-control" type="number" name="dientich" required="" placeholder="Diện tích" id="dientich">
+                        <input class="form-input form-control" name="dientich" placeholder="Diện tích" id="dientich">
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="gia">Giá *</label>
-                        <input class="form-control" type="text" value="0" name="gia" placeholder="Giá" id="gia">
+                        <input class="form-input form-control" type="text" name="gia" placeholder="Giá" id="gia">
                     </div>
                 </div>
                 <div class="col-xs-12">
                    <div class="form-group">
                         <label for="">Hình ảnh *</label>
-                        <input class="form-control" type="file" value="0" name="anh" placeholder="" id="anh">
+                        <input class="form-input form-control" type="text" name="anh" placeholder="" id="anh">
                    </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="form-group">
                         <label for="">Mô tả</label>
-                        <textarea class="form-control" name="mota" id="mota" cols="165" rows="5"></textarea>
+                        <textarea class="form-input form-control" name="mota" id="mota" cols="165" rows="5"></textarea>
                    </div>
                 </div>
                 <div class="col-xs-12 p-2" >
                     <div class="text-center">
                         <input class="fa text-secondary btn border-secondary" type="reset" value="HỦY">
-                        <input class="fa btn btn-primary" type="submit" value="ĐĂNG BÀI">
+                        <input onclick="dangtin()" class="fa btn btn-primary" type="submit" value="ĐĂNG BÀI">
                     </div>
                 </div>
             </div>
         </div>
     </form>
-     <!-- Đăng nhập -->
-     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-     <div class="modal-dialog">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">ĐĂNG NHẬP</h5>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-                 <form>
-                     <div class="mb-3">
-                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                         <input type="email" class="form-control" id="exampleInputEmail1"
-                             aria-describedby="emailHelp">
-                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                         </div>
-                     </div>
-                     <div class="mb-3">
-                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                         <input type="password" class="form-control" id="exampleInputPassword1">
-                     </div>
-                     <div class="mb-3 form-check">
-                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                         <label class="form-check-label" for="exampleCheck1">Lưu tài khoản</label>
-                     </div>
-                     <div>
-                       <input onclick="checkSignIn()" type="submit" value="Đăng nhập">
-                       <input type="reset" value="Hủy">
-                     </div>
-                 </form>
-             </div>
-         </div>
-     </div>
-</div>
-<!-- Đăng ký -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-     <div class="modal-dialog">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <h5 class="modal-title" id="staticBackdropLabel">ĐĂNG KÝ</h5>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-                 <form id="form1" action="#" method="post" enctype="multipart/form-data" onsubmit="return login();">
-                     <div class="mb-3 form-group">
-                         <label style="color: #000 !important;" for="exampleInputEmail1" class="form-label">Email address:</label>
-                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
-                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                         <span class="form-message"></span>
-                     </div>
-                     <div class="mb-3 form-group">
-                         <label style="color: #000 !important;" for="" class="form-label">Password:</label>
-                         <input type="password" class="form-control" name="psw" id="psw">
-                         <span class="form-message"></span>
-                         <!-- <div onblur="login()" id="strength"></div> -->
-                     </div>
-                     <div class="mb-3 form-group">
-                         <label style="color: #000 !important;" for="psw1" class="form-label">Confirm password:</label>
-                         <input type="password" class="form-control" name="psw1" id="psw1">
-                         <span class="form-message"></span>
-                     </div>
-                     <div class="mb-3 form-group">
-                         <label style="color: #000 !important;" for="fname" class="form-label">Full name:</label>
-                         <input type="password" name="fname" class="form-control" id="fname">
-                         <span class="form-message"></span>
-                     </div>
-                     <div class="mb-3 form-group">
-                         <label style="color: #000 !important;" for="sex" id="sex" class="form-label">Sex:</label>
-                         <input id="nam" class="ms-2 sex" name="sex" type="radio" value="Nam">Nam
-                         <input id="nu" class="ms-2 sex" name="sex" type="radio" value="Nữ">Nữ
-                         <input id="khac" class="ms-2 sex" name="sex" type="radio" value="Khác">Khác
-                         <br>
-                         <span class="form-message"></span>
-                         <div class="mb-3 form-group">
-                             <label style="color: #000 !important;" for="phone" class="form-label">Phone:</label>
-                             <input type="text" class="form-control" id="phone">
-                             <span class="form-message"></span>
-                         </div>
-                         <div class="mb-3 form-group">
-                             <label style="color: #000 !important;" for="address" class="form-label">Address:</label>
-                             <input type="text" class="form-control" id="address">
-                             <span class="form-message"></span>
-                         </div>
-                         <div class="modal-footer">
-                           <input style="background-color: #337ab7; color: #fff;" type="submit" value="Đăng ký">
-                           <input style="background-color: #337ab7; color: #fff;" type="reset" value="Hủy">
-                         </div>
-                 </form>
-             </div>
-         </div>
-     </div>
-</div>
+    <!-- Đăng nhập -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">ĐĂNG NHẬP</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Lưu tài khoản</label>
+                                </div>
+                                <div>
+                                  <input onclick="checkSignIn()" type="submit" value="Đăng nhập">
+                                  <input type="reset" value="Hủy">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- Đăng ký -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">ĐĂNG KÝ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form1" action="#" method="post" enctype="multipart/form-data" onsubmit="return login();">
+                                <div class="mb-3 form-group">
+                                    <label style="color: #000 !important;" for="exampleInputEmail1" class="form-label">Email address:</label>
+                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+                                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="mb-3 form-group">
+                                    <label style="color: #000 !important;" for="" class="form-label">Password:</label>
+                                    <input type="password" class="form-control" name="psw" id="psw">
+                                    <span class="form-message"></span>
+                                    <!-- <div onblur="login()" id="strength"></div> -->
+                                </div>
+                                <div class="mb-3 form-group">
+                                    <label style="color: #000 !important;" for="psw1" class="form-label">Confirm password:</label>
+                                    <input type="password" class="form-control" name="psw1" id="psw1">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="mb-3 form-group">
+                                    <label style="color: #000 !important;" for="fname" class="form-label">Full name:</label>
+                                    <input type="password" name="fname" class="form-control" id="fname">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="mb-3 form-group">
+                                    <label style="color: #000 !important;" for="sex" id="sex" class="form-label">Sex:</label>
+                                    <input id="nam" class="ms-2 sex" name="sex" type="radio" value="Nam">Nam
+                                    <input id="nu" class="ms-2 sex" name="sex" type="radio" value="Nữ">Nữ
+                                    <input id="khac" class="ms-2 sex" name="sex" type="radio" value="Khác">Khác
+                                    <br>
+                                    <span class="form-message"></span>
+                                    <div class="mb-3 form-group">
+                                        <label style="color: #000 !important;" for="phone" class="form-label">Phone:</label>
+                                        <input type="text" class="form-control" id="phone">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="mb-3 form-group">
+                                        <label style="color: #000 !important;" for="address" class="form-label">Address:</label>
+                                        <input type="text" class="form-control" id="address">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <input style="background-color: #337ab7; color: #fff;" type="submit" value="Đăng ký">
+                                      <input style="background-color: #337ab7; color: #fff;" type="reset" value="Hủy">
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </div>
   </main>
-  <footer class="text-center text-lg-start bg-white text-muted">
-    <section class="d-sm-block">
-      <div class="container text-center text-start">
+  <footer class="text-center text-lg-start bg-white text-muted ">
+    <section class="d-none d-sm-block bg-light" >
+      <div class="container text-center text-start pb-5">
         <div class="row align-items-start">
-          <div class="col-xs-12 footer-title1 mt-3">
-            <p class="h5">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
+          <div class="col-xs-12 footer-title1">
+            <p class="h5 fw-bold my-5">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
                 Kiều</a></div>
             <div><a class="text-decoration-none text-black" href="">Tân An</a></div>
             <div><a class="text-decoration-none text-black" href="">An Hòa</a></div>
@@ -280,7 +283,7 @@
             <div><a class="text-decoration-none text-black" href="">An Hội</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
                 Thủy</a></div>
             <div><a class="text-decoration-none text-black" href="">An Thới</a></div>
             <div><a class="text-decoration-none text-black" href="">Bình Thủy</a></div>
@@ -292,7 +295,7 @@
             <div><a class="text-decoration-none text-black" href="">Trà Nóc</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
                 răng</a></div>
             <div><a class="text-decoration-none text-black" href="">Ba Láng</a></div>
             <div><a class="text-decoration-none text-black" href="">Hưng Phú</a></div>
@@ -304,7 +307,7 @@
             <div><a class="text-decoration-none text-black" href="">Đông Thuận</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
                 Phong Điền</a></div>
             <div><a class="text-decoration-none text-black" href="">Mỹ Khánh</a></div>
             <div><a class="text-decoration-none text-black" href="">Giai Xuân</a></div>
@@ -312,7 +315,7 @@
             <div><a class="text-decoration-none text-black" href="">Nhơn Ái</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
                 Môn</a></div>
             <div><a class="text-decoration-none text-black" href="">Châu Văn Liêm</a></div>
             <div><a class="text-decoration-none text-black" href="">Trường Lạc</a></div>
@@ -333,14 +336,14 @@
         </div>
       </div>
     </section>
-    <section class="p-1">
-      <div class="container text-center text-md-start mt-5">
+    <section class="">
+      <div class="container text-center text-md-start mt-5 bg-white">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               VỀ CHÚNG TÔI
             </h6>
             <p class="mb-1">
@@ -348,7 +351,7 @@
               Bình Thủy, Cái Răng, Ô Môn, Thốt Nốt, Phong Điền Cho thuê bất động sản tại Cần
               Thơ. Dịch vụ giấy tờ nhà đất, nhận ký gửi nhà đất Giao dịch chính chủ, Uy tín
               chất lượng.
-            </p><div>
+            <div>
               <i style="color: #337ab7;" class="fa fa-phone" aria-hidden="true"></i>(+84) 979 660 889
               <br>
               <i style="color: #337ab7;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Nguyễn Tri Phương, P.
@@ -359,24 +362,24 @@
                 batdongsancantho1@gmail.com
               </a>
             </div>
-            <p></p>
+            </p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-3">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               TÀI KHOẢN
-            </h6> 
+            </h6>
             <p class="mb-0">
-              <a class="text-decoration-none" href="">Đăng ký</a>
+              <a class="text-decoration-none" id="signup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-reset">Đăng ký</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="">Đăng nhập</a>
+              <a class="text-decoration-none" id="signin-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-reset">Đăng nhập</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="">Đăng tin</a>
+              <a class="text-decoration-none" onclick="goToUpNew()" class="text-reset">Đăng tin</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -384,29 +387,27 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               MUA BÁN
             </h6>
-            <div class="d-none">
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Căn hộ</a>
-              </p>
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Nhà</a>
-              </p>
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Đất</a>
-              </p>
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Văn phòng-Kho</a>
-              </p>
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Nhà trọ</a>
-              </p>
-              <p class="mb-0">
-                <a class="text-decoration-none" href="">Khác</a>
-              </p>
-            </div>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="./property.html?loai=Căn_Hộ" class="text-reset">Căn hộ</a>
+            </p>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="./property.html?loai=Nhà" class="text-reset">Nhà</a>
+            </p>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="./property.html?loai=Đất" class="text-reset">Đất</a>
+            </p>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="./property.html?loai=Văn_Phòng" class="text-reset">Văn phòng-Kho</a>
+            </p>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="./property.html?loai=Nhà_Trọ" class="text-reset">Nhà trọ</a>
+            </p>
+            <p class="mb-0">
+              <a class="text-decoration-none" href="#!" class="text-reset">Khác</a>
+            </p>
 
           </div>
           <!-- Grid column -->
@@ -437,7 +438,7 @@
   <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
   <script src="./script/script.js"></script>
   <script src="./script/script-login-register.js"></script>
-  <script src="./script/property.js"></script>
+  <script langgue></script>
   <script>
     Validator({
       form: '#form1',

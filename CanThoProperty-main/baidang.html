@@ -5,13 +5,35 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang chủ</title>
+  <title>Bài đăng</title>
   <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="./style/style.css">
+  <style>
+    #danhsachdangtin > tr,th,td{
+      border: 1px solid #000;
+      text-align: center;
+    }
+    .bd-img{
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+    }
+    table{
+      width: 100%;
+    }
+
+    #edit-price > input{
+      display: none;
+    }
+
+    #edit-price > p{
+      display: inline;
+    }
+  </style>
 </head>
 
-<body>
+<body onload="hienthiND()">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navi">
       <div class="container-fluid">
@@ -70,225 +92,15 @@
         </div>
       </div>
     </nav>
-    <a href="#" id="return-to-top" class="btn btn-primary" style="background-color: #2e5fab;"><i class="fas fa-chevron-up"></i></a>
+    </nav>
+    <a href="#navi" id="return-to-top" class="btn btn-primary" style="background-color: #2e5fab;">
+      <i class="fas fa-chevron-up"></i>
+    </a>
   </header>
   <main>
-    <!-- SLIDESHOW -- START -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/tinnoibat1.jpg" class="d-block w-100 fix-slide" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/tinnoibat2.jpg" class="d-block w-100 fix-slide" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/tinnoibat3.jpg" class="d-block w-100 fix-slide" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>        
-    </div>
-    <!-- SLIDESHOW -- END   -->
-    <!-- row3- START -->
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-12">
-            <h2 class="textleft tinvip"><b>Tin hot</b></h2>
-            <hr/>
-        </div>
-      </div>
-    </div>
-    <!-- row3- END -->
-    <!-- row4- START -->
-    <div class="container">
-      <div class=" row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 mb-5">
-        <div class="col">
-          <div class="card h-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark  pointer">
-              <i class="fas fa-fire"></i>
-              <img src="./images/vip1.jpg" class="card-img-top fix-image-card" alt="...">
-              <div class="card-body">
-                <h6 class="card-title line-clamp">Nhà số 30-32 đường số 23 khu Thới Nhựt 1 An Khánh</h6>
-                <p class="card-text line-clamp">đường số 23, nhà số 30-32 Khu dân cư Thới Nhựt 1 , phường An Khánh , quận Ninh kiều, thành phố Cần Thơ<hr/></p>
-                <p class="card-text">
-                  <div class="d-flex justify-content-between">
-                    <i class="fas fa-dollar-sign"><span style="color: black;"> 3.3 tỷ</span></i>
-                    <i class="fas fa-expand-alt"><span style="color: black; font-weight: normal;"> 84 m<sup>2</sup></span></i>
-                  </div>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark  pointer">
-              <i class="fas fa-fire"></i>
-              <img src="./images/vip2.jpg" class="card-img-top fix-image-card" alt="...">
-              <div class="card-body">
-                <h6 class="card-title line-clamp">Nhà khu Đại học Y Dược Đường Trần Minh Sơn</h6>
-                <p class="card-text line-clamp">đường Trần Minh Sơn, phường An Khánh, Quận Ninh Kiều, thành phố Cần thơ<hr/></p>
-                <p class="card-text">
-                  <div class="d-flex justify-content-between">
-                    <i class="fas fa-dollar-sign"><span style="color: black;"> 6.2 tỷ</span></i>
-                    <i class="fas fa-expand-alt"><span style="color: black; font-weight: normal;"> 230 m<sup>2</sup></span></i>
-                  </div>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark  pointer">
-              <i class="fas fa-fire"></i>
-              <img src="./images/vip3.jpg" class="card-img-top fix-image-card" alt="...">
-              <div class="card-body">
-                <h6 class="card-title line-clamp">Bán nhà mặt tiền Trần Nam Phú, P An Khánh, Q Ninh Kiều, Tp Cần Thơ</h6>
-                <p class="card-text line-clamp">đường Trần Nam Phú, P An Khánh, Q Ninh Kiều, Tp Cần Thơ<hr/></p>
-                <p class="card-text">
-                  <div class="d-flex justify-content-between">
-                    <i class="fas fa-dollar-sign"><span style="color: black;"> 9 tỷ</span></i>
-                    <i class="fas fa-expand-alt"><span style="color: black; font-weight: normal;"> 120 m<sup>2</sup></span></i>
-                  </div>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark  pointer">
-              <i class="fas fa-fire"></i>
-              <img src="./images/vip4.jpg" class="card-img-top fix-image-card" alt="...">
-              <div class="card-body">
-                <h6 class="card-title line-clamp">Bán nền đường D15 Hồng Loan 6A, Hưng Thạnh, Cái Răng, Cần Thơ</h6>
-                <p class="card-text line-clamp">đường D15 Hồng Loan 6A, P Hưng Thạnh,Q Cái Răng,Tp Cần Thơ<hr/></p>
-                <p class="card-text">
-                  <div class="d-flex justify-content-between">
-                    <i class="fas fa-dollar-sign"><span style="color: black;"> 3.1 tỷ</span></i>
-                    <i class="fas fa-expand-alt"><span style="color: black; font-weight: normal;"> 80 m<sup>2</sup></span></i>
-                  </div>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- row4- END -->
-    <!-- row1- START -->
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-12">
-            <h2 class="textleft tinvip"><b>dịch vụ cung cấp</b></h2>
-            <hr/>
-        </div>
-      </div>
-    </div>
-    <!-- row1- END -->
-    <!-- row2- START -->
-    <div class="container">
-      <div class="row justify-content-start mb-5 row-cols-md-1 row-cols-1">
-        <div class="col">
-          <div class="card mb-3 w-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark pointer">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <img src="./images/dichvu1.jpg" class="img-fluid rounded-start d-block w-100" style="height: 190px;">
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h6 class="card-title line-clamp">NHẬN KÍ GỬI NHÀ ĐẤT CẦN THƠ, MÔI GIỚI NHÀ ĐẤT CẦN THƠ</h6>
-                    <p class="card-text">CÔNG TY TNHH DV BẤT  ĐỘNG SẢN CẦN THƠ <br> Hotline: 19001998</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 w-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark pointer">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <img src="./images/dichvu2.jpg" class="img-fluid rounded-start d-block w-100" style="height: 190px;">
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h6 class="card-title line-clamp">DỊCH VỤ LÀM GIẤY TỜ NHÀ ĐẤT CẦN THƠ</h6>
-                    <p class="card-text">CÔNG TY TNHH DV BẤT  ĐỘNG SẢN CẦN THƠ <br> Hotline: 19001998</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 w-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark pointer">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <img src="./images/dichvu3.jpg" class="img-fluid rounded-start d-block w-100" style="height: 190px;">
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h6 class="card-title line-clamp">DỊCH VỤ NHÀ ĐẤT CẦN THƠ</h6>
-                    <p class="card-text">CÔNG TY TNHH DV BẤT  ĐỘNG SẢN CẦN THƠ <br> Hotline: 19001998</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 w-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark pointer">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <img src="./images/dichvu4.jpg" class="img-fluid rounded-start d-block w-100" style="height: 190px;">
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h6 class="card-title line-clamp">NHẬN THIẾT KẾ CÔNG TRÌNH XÂY DỰNG TẠI CẦN THƠ</h6>
-                    <p class="card-text">CÔNG TY TNHH DV BẤT  ĐỘNG SẢN CẦN THƠ <br> Hotline: 19001998</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-3 w-100 khung-hv">
-            <a href="#!" class="text-decoration-none text-dark pointer">
-              <div class="row g-0">
-                <div class="col-md-3">
-                  <img src="./images/dichvu5.jpg" class="img-fluid rounded-start d-block w-100" style="height: 190px;">
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body">
-                    <h6 class="card-title line-clamp">NHẬN THI CÔNG CÔNG TRÌNH DÂN DỤNG TẠI CẦN THƠ</h6>
-                    <p class="card-text">CÔNG TY TNHH DV BẤT  ĐỘNG SẢN CẦN THƠ <br> Hotline: 19001998</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="container bg-white">
+      <table id="table1">
+      </table>
     </div>
     <!-- Đăng nhập -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -355,7 +167,7 @@
                                 </div>
                                 <div class="mb-3 form-group">
                                     <label style="color: #000 !important;" for="fname" class="form-label">Full name:</label>
-                                    <input type="text" name="fname" class="form-control" id="fname">
+                                    <input type="password" name="fname" class="form-control" id="fname">
                                     <span class="form-message"></span>
                                 </div>
                                 <div class="mb-3 form-group">
@@ -384,18 +196,16 @@
                     </div>
                 </div>
     </div>
-    <!-- row2- END -->
   </main>
-  <!-- footer - Start -->
-  <footer class="text-center text-lg-start bg-white text-muted ">
-    <section class="d-none d-sm-block bg-light" >
-      <div class="container text-center text-start pb-5">
-        <div class="row align-items-start">
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <section class="d-none d-sm-block">
+      <div class="container text-center text-start">
+        <div class="row align-items-start d-none">
           <div class="col-xs-12 footer-title1">
-            <p class="h5 fw-bold my-5">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
+            <p class="h5">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
+            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
                 Kiều</a></div>
             <div><a class="text-decoration-none text-black" href="">Tân An</a></div>
             <div><a class="text-decoration-none text-black" href="">An Hòa</a></div>
@@ -407,7 +217,7 @@
             <div><a class="text-decoration-none text-black" href="">An Hội</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
+            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
                 Thủy</a></div>
             <div><a class="text-decoration-none text-black" href="">An Thới</a></div>
             <div><a class="text-decoration-none text-black" href="">Bình Thủy</a></div>
@@ -419,7 +229,7 @@
             <div><a class="text-decoration-none text-black" href="">Trà Nóc</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
+            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
                 răng</a></div>
             <div><a class="text-decoration-none text-black" href="">Ba Láng</a></div>
             <div><a class="text-decoration-none text-black" href="">Hưng Phú</a></div>
@@ -431,7 +241,7 @@
             <div><a class="text-decoration-none text-black" href="">Đông Thuận</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
+            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
                 Phong Điền</a></div>
             <div><a class="text-decoration-none text-black" href="">Mỹ Khánh</a></div>
             <div><a class="text-decoration-none text-black" href="">Giai Xuân</a></div>
@@ -439,7 +249,7 @@
             <div><a class="text-decoration-none text-black" href="">Nhơn Ái</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
+            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
                 Môn</a></div>
             <div><a class="text-decoration-none text-black" href="">Châu Văn Liêm</a></div>
             <div><a class="text-decoration-none text-black" href="">Trường Lạc</a></div>
@@ -460,14 +270,14 @@
         </div>
       </div>
     </section>
-    <section class="">
-      <div class="container text-center text-md-start mt-5 bg-white">
+    <section class="p-1">
+      <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-2">
+            <h6 class="text-uppercase fw-bold mb-3">
               VỀ CHÚNG TÔI
             </h6>
             <p class="mb-1">
@@ -475,7 +285,7 @@
               Bình Thủy, Cái Răng, Ô Môn, Thốt Nốt, Phong Điền Cho thuê bất động sản tại Cần
               Thơ. Dịch vụ giấy tờ nhà đất, nhận ký gửi nhà đất Giao dịch chính chủ, Uy tín
               chất lượng.
-            <div>
+            </p><div>
               <i style="color: #337ab7;" class="fa fa-phone" aria-hidden="true"></i>(+84) 979 660 889
               <br>
               <i style="color: #337ab7;" class="fa fa-map-marker" aria-hidden="true"></i> 23 Nguyễn Tri Phương, P.
@@ -486,24 +296,24 @@
                 batdongsancantho1@gmail.com
               </a>
             </div>
-            </p>
+            <p></p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-3">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-2">
+            <h6 class="text-uppercase fw-bold mb-3">
               TÀI KHOẢN
-            </h6>
+            </h6> 
             <p class="mb-0">
-              <a class="text-decoration-none" id="signup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-reset">Đăng ký</a>
+              <a class="text-decoration-none" href="">Đăng ký</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" id="signin-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-reset">Đăng nhập</a>
+              <a class="text-decoration-none" href="">Đăng nhập</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" onclick="goToUpNew()" class="text-reset">Đăng tin</a>
+              <a class="text-decoration-none" href="">Đăng tin</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -511,27 +321,29 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-2">
+            <h6 class="text-uppercase fw-bold mb-3">
               MUA BÁN
             </h6>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="./property.html?loai=Căn_Hộ" class="text-reset">Căn hộ</a>
-            </p>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="./property.html?loai=Nhà" class="text-reset">Nhà</a>
-            </p>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="./property.html?loai=Đất" class="text-reset">Đất</a>
-            </p>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="./property.html?loai=Văn_Phòng" class="text-reset">Văn phòng-Kho</a>
-            </p>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="./property.html?loai=Nhà_Trọ" class="text-reset">Nhà trọ</a>
-            </p>
-            <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Khác</a>
-            </p>
+            <div class="d-none">
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Căn hộ</a>
+              </p>
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Nhà</a>
+              </p>
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Đất</a>
+              </p>
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Văn phòng-Kho</a>
+              </p>
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Nhà trọ</a>
+              </p>
+              <p class="mb-0">
+                <a class="text-decoration-none" href="">Khác</a>
+              </p>
+            </div>
 
           </div>
           <!-- Grid column -->
@@ -557,12 +369,11 @@
     </div>
     <!-- Copyright -->
   </footer>
-  <!-- footer - END -->
+    
+  <!-- Footer -->
   <script src="./jQuery/jquery-3.6.1.min.js"></script>
   <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
-  <script src="./script/script.js"></script>
-  <script src="./script/property.js"></script>
-  <script src="./script/saved.js"></script>
+  <script src="./script/script_baidang.js"></script>
   <script src="./script/script-login-register.js"></script>
   <script>
     Validator({
@@ -587,5 +398,4 @@
     });
   </script>
 </body>
-
 </html>

@@ -65,7 +65,8 @@ function Validator(options){
                     localStorage.setItem('Account',JSON.stringify(superString));
                     // superArray.push(superString);
                     alert('Đăng ký thành công');
-                    window.location.href='tintuc.html';
+                    location.reload();
+                    // window.location.href='tintuc.html';
                     // console.log(superArray);
                 }
                 // Trường hợp submit với hành vi mặc định
@@ -168,8 +169,10 @@ if(localStorage.getItem('CheckCode') == 'true'){
     let element = document.getElementById('content-btn');
     element.outerHTML = 
         '<div id="content-btn">'+
+        '<a href="./saved.html" class="me-3" style="font-size: 1.5em;"><i class="far fa-heart"></i></a>'+
         '<button id="signin-btn" type="button" class="btn btn-primary" data-bs-toggle="modal">'+localStorage.getItem('Name')+'</button>'+
         '<button onclick="logOut();" id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal">Thoát</button>'+
+        '<button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">Đăng bài</button>'+
         '</div>';
     changeContent1.innerHTML = localStorage.getItem('Name');
 }
@@ -182,9 +185,12 @@ function logOut() {
     let element = document.getElementById('content-btn');
         element.outerHTML = 
             '<div id="content-btn">'+
+            '<a href="./saved.html" class="me-3" style="font-size: 1.5em;"><i class="far fa-heart"></i></a>'+
             '<button id="signin-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng Nhập</button>'+
-            '<button onclick="logOut();" id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Đăng ký</button>'+
-            '</div>';
+            '<button id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Đăng ký</button>'+
+            '<button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">Đăng bài</button>'+
+            '</div>'
+            ;
     checkTF = false;
     localStorage.setItem('CheckCode',checkTF);
     alert('Tài khoản đã được đăng xuất');

@@ -67,8 +67,11 @@
             <button id="signin-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Đăng Nhập
             </button>
-            <button onclick="logOut();" id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Đăng ký
+            </button>
+            <button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">
+              Đăng bài
             </button>
           </div>
         </div>
@@ -284,15 +287,15 @@
     </div>
   </div>
   </main>
-  <footer class="text-center text-lg-start bg-white text-muted">
-    <section class="d-none d-sm-block">
-      <div class="container text-center text-start">
+  <footer class="text-center text-lg-start bg-white text-muted ">
+    <section class="d-none d-sm-block bg-light" >
+      <div class="container text-center text-start pb-5">
         <div class="row align-items-start">
           <div class="col-xs-12 footer-title1">
-            <p class="h5 mt-3">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
+            <p class="h5 fw-bold my-5">BẤT ĐỘNG SẢN TẠI CÁC PHƯỜNG</p>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ninh
                 Kiều</a></div>
             <div><a class="text-decoration-none text-black" href="">Tân An</a></div>
             <div><a class="text-decoration-none text-black" href="">An Hòa</a></div>
@@ -304,7 +307,7 @@
             <div><a class="text-decoration-none text-black" href="">An Hội</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Bình
                 Thủy</a></div>
             <div><a class="text-decoration-none text-black" href="">An Thới</a></div>
             <div><a class="text-decoration-none text-black" href="">Bình Thủy</a></div>
@@ -316,7 +319,7 @@
             <div><a class="text-decoration-none text-black" href="">Trà Nóc</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Cái
                 răng</a></div>
             <div><a class="text-decoration-none text-black" href="">Ba Láng</a></div>
             <div><a class="text-decoration-none text-black" href="">Hưng Phú</a></div>
@@ -328,7 +331,7 @@
             <div><a class="text-decoration-none text-black" href="">Đông Thuận</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Huyện
                 Phong Điền</a></div>
             <div><a class="text-decoration-none text-black" href="">Mỹ Khánh</a></div>
             <div><a class="text-decoration-none text-black" href="">Giai Xuân</a></div>
@@ -336,7 +339,7 @@
             <div><a class="text-decoration-none text-black" href="">Nhơn Ái</a></div>
           </div>
           <div class="col footer-item text-start ms-4">
-            <div class="subfoot-header mb-3"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
+            <div class="subfoot-header mb-2"><a class="text-decoration-none h6" style="color: #337ab7;" href="">Ô
                 Môn</a></div>
             <div><a class="text-decoration-none text-black" href="">Châu Văn Liêm</a></div>
             <div><a class="text-decoration-none text-black" href="">Trường Lạc</a></div>
@@ -358,13 +361,13 @@
       </div>
     </section>
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start mt-5 bg-white">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               VỀ CHÚNG TÔI
             </h6>
             <p class="mb-1">
@@ -388,19 +391,19 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-3">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               TÀI KHOẢN
             </h6>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Đăng ký</a>
+              <a class="text-decoration-none" id="signup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="text-reset">Đăng ký</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Đăng nhập</a>
+              <a class="text-decoration-none" id="signin-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-reset">Đăng nhập</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Đăng tin</a>
+              <a class="text-decoration-none" onclick="goToUpNew()" class="text-reset">Đăng tin</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -408,23 +411,23 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3">
+            <h6 class="text-uppercase fw-bold mb-2">
               MUA BÁN
             </h6>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Căn hộ</a>
+              <a class="text-decoration-none" href="./property.html?loai=Căn_Hộ" class="text-reset">Căn hộ</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Nhà</a>
+              <a class="text-decoration-none" href="./property.html?loai=Nhà" class="text-reset">Nhà</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Đất</a>
+              <a class="text-decoration-none" href="./property.html?loai=Đất" class="text-reset">Đất</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Văn phòng-Kho</a>
+              <a class="text-decoration-none" href="./property.html?loai=Văn_Phòng" class="text-reset">Văn phòng-Kho</a>
             </p>
             <p class="mb-0">
-              <a class="text-decoration-none" href="#!" class="text-reset">Nhà trọ</a>
+              <a class="text-decoration-none" href="./property.html?loai=Nhà_Trọ" class="text-reset">Nhà trọ</a>
             </p>
             <p class="mb-0">
               <a class="text-decoration-none" href="#!" class="text-reset">Khác</a>
@@ -434,10 +437,11 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3">KẾT NỐI VỚI CHÚNG TÔI</h6>
-
+          <div class="footer-item footer-item--contact" style="width: 340px;">
+            <div class="footer-item__title">KẾT NỐI VỚI CHÚNG TÔI</div>
+            <div style="border-radius: 6px;overflow: hidden;box-shadow: 0 0 3px rgba(0,0,0,0.4);" class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/batdongsancantho.vn" data-tabs="timeline" data-width="" data-height="130px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1387077088007573&amp;container_width=340&amp;height=130&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsancantho.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=">
+              <iframe name="f169ec79116eae" width="1000px" height="130px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.10/plugins/page.php?adapt_container_width=true&amp;app_id=1387077088007573&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2ba3986a1f59a8%26domain%3Dbatdongsancantho.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fbatdongsancantho.vn%252Ff35b6258b984588%26relation%3Dparent.parent&amp;container_width=340&amp;height=130&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fbatdongsancantho.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=" style="border: none; visibility: visible; width: 340px; height: 130px;" class=""></iframe>
+            </div> 
           </div>
           <!-- Grid column -->
         </div>

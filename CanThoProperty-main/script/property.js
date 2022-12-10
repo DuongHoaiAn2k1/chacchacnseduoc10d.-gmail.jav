@@ -166,3 +166,6 @@ searchBar.addEventListener('keypress', (event) => {
 function changeAttribute () {
     window.location.href='property.html';
 }
+function goToUpNew() {
+    window.location.href = 'dangtin.html';
+}
