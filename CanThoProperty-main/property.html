@@ -64,9 +64,9 @@
                   <button id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Đăng ký
                   </button>
-                  <button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">
+                  <!-- <button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">
                     Đăng bài
-                  </button>
+                  </button> -->
                 </div>
               </div>
             </div>
@@ -247,100 +247,99 @@
                 </div>
             </div>
         </div>
-        <!-- Đăng nhập -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">ĐĂNG NHẬP</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ĐĂNG NHẬP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Lưu tài khoản</label>
-                    </div>
-                    <div>
-                      <input onclick="checkSignIn()" type="submit" value="Đăng nhập">
-                      <input type="reset" value="Hủy">
-                    </div>
-                </form>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Lưu tài khoản</label>
+                        </div>
+                        <div>
+                          <input onclick="checkSignIn()" type="submit" value="Đăng nhập">
+                          <input type="reset" value="Hủy">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 </div>
 <!-- Đăng ký -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">ĐĂNG KÝ</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="form1" action="#" method="post" enctype="multipart/form-data" onsubmit="return login();">
-                    <div class="mb-3 form-group">
-                        <label style="color: #000 !important;" for="exampleInputEmail1" class="form-label">Email address:</label>
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
-                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label style="color: #000 !important;" for="" class="form-label">Password:</label>
-                        <input type="password" class="form-control" name="psw" id="psw">
-                        <span class="form-message"></span>
-                        <!-- <div onblur="login()" id="strength"></div> -->
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label style="color: #000 !important;" for="psw1" class="form-label">Confirm password:</label>
-                        <input type="password" class="form-control" name="psw1" id="psw1">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label style="color: #000 !important;" for="fname" class="form-label">Full name:</label>
-                        <input type="password" name="fname" class="form-control" id="fname">
-                        <span class="form-message"></span>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label style="color: #000 !important;" for="sex" id="sex" class="form-label">Sex:</label>
-                        <input id="nam" class="ms-2 sex" name="sex" type="radio" value="Nam">Nam
-                        <input id="nu" class="ms-2 sex" name="sex" type="radio" value="Nữ">Nữ
-                        <input id="khac" class="ms-2 sex" name="sex" type="radio" value="Khác">Khác
-                        <br>
-                        <span class="form-message"></span>
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">ĐĂNG KÝ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form1" action="#" method="post" enctype="multipart/form-data" onsubmit="return login();">
                         <div class="mb-3 form-group">
-                            <label style="color: #000 !important;" for="phone" class="form-label">Phone:</label>
-                            <input type="text" class="form-control" id="phone">
+                            <label style="color: #000 !important;" for="exampleInputEmail1" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
+                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                             <span class="form-message"></span>
                         </div>
                         <div class="mb-3 form-group">
-                            <label style="color: #000 !important;" for="address" class="form-label">Address:</label>
-                            <input type="text" class="form-control" id="address">
+                            <label style="color: #000 !important;" for="" class="form-label">Password:</label>
+                            <input type="password" class="form-control" name="psw" id="psw">
+                            <span class="form-message"></span>
+                            <!-- <div onblur="login()" id="strength"></div> -->
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label style="color: #000 !important;" for="psw1" class="form-label">Confirm password:</label>
+                            <input type="password" class="form-control" name="psw1" id="psw1">
                             <span class="form-message"></span>
                         </div>
-                        <div class="modal-footer">
-                          <input style="background-color: #337ab7; color: #fff;" type="submit" value="Đăng ký">
-                          <input style="background-color: #337ab7; color: #fff;" type="reset" value="Hủy">
+                        <div class="mb-3 form-group">
+                            <label style="color: #000 !important;" for="fname" class="form-label">Full name:</label>
+                            <input type="text" name="fname" class="form-control" id="fname">
+                            <span class="form-message"></span>
                         </div>
-                </form>
+                        <div class="mb-3 form-group">
+                            <label style="color: #000 !important;" for="sex" id="sex" class="form-label">Sex:</label>
+                            <input id="nam" class="ms-2 sex" name="sex" type="radio" value="Nam">Nam
+                            <input id="nu" class="ms-2 sex" name="sex" type="radio" value="Nữ">Nữ
+                            <input id="khac" class="ms-2 sex" name="sex" type="radio" value="Khác">Khác
+                            <br>
+                            <span class="form-message"></span>
+                            <div class="mb-3 form-group">
+                                <label style="color: #000 !important;" for="phone" class="form-label">Phone:</label>
+                                <input type="text" class="form-control" id="phone">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="mb-3 form-group">
+                                <label style="color: #000 !important;" for="address" class="form-label">Address:</label>
+                                <input type="text" class="form-control" id="address">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="modal-footer">
+                              <input style="background-color: #337ab7; color: #fff;" type="submit" value="Đăng ký">
+                              <input style="background-color: #337ab7; color: #fff;" type="reset" value="Hủy">
+                            </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+</div>
     </main>
     <footer class="text-center text-lg-start bg-white text-muted ">
         <section class="d-none d-sm-block bg-light" >

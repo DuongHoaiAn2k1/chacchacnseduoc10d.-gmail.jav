@@ -188,7 +188,6 @@ function logOut() {
             '<a href="./saved.html" class="me-3" style="font-size: 1.5em;"><i class="far fa-heart"></i></a>'+
             '<button id="signin-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng Nhập</button>'+
             '<button id="signup-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Đăng ký</button>'+
-            '<button onclick="goToUpNew()" id="upNews" type="button" class="btn btn-primary">Đăng bài</button>'+
             '</div>'
             ;
     checkTF = false;
